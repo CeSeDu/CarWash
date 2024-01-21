@@ -28,9 +28,9 @@ body {
     position: relative;
 }
 
-nav h1 {
-    padding: 20px; /* Sayısal değer ekleyin */
+ h1 {
     margin: 0;
+    padding-top: 20px;
 }
 
 nav {
