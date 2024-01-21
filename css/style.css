@@ -1,0 +1,130 @@
+:root {
+    --main-bg-color: #f4f4f4;
+    --main-text-color: #fff;
+    --button-bg-color: #333;
+    --button-hover-color: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+}
+
+.navbar {
+    background-color: #555;
+    padding: 20px;
+    margin: 0;
+}
+
+.overlay {
+    background: url('https://images.pexels.com/photos/4870707/pexels-photo-4870707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+    color: var(--main-text-color);
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+nav h1 {
+    padding: 20px; /* Sayısal değer ekleyin */
+    margin: 0;
+}
+
+nav {
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    padding: 15px 25px;
+    background-color: var(--button-bg-color);
+    color: var(--main-text-color);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+}
+
+article {
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 20px; 
+}
+
+#priceList section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: left;
+    overflow: hidden;
+    max-width: 300px; /* Kart genişliğini belirleyin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#priceList h1,
+#priceList h2 {
+    color: #333;
+    text-align: center;
+}
+#priceList h2{
+    height: 50px;
+}
+#priceList table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+#priceList th,
+#priceList td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#priceList th {
+    background-color: #333;
+    color: #fff;
+}
+
+#priceList ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+#priceList p{
+    height: 100px;
+}
+
+footer {
+    padding: 20px 0; /* Sayısal değer ekleyin */
+    background-color: #333;
+    color: var(--main-text-color);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
